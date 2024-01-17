@@ -54,6 +54,8 @@ def main():
     # Handle the translation process when the user clicks the translate button
     if translate_button:
         translated_text.text('Translating...')
+        translated_text.markdown(f'<span style="font-size:40px">{translate_text(text_input, target_language)}</span>', unsafe_allow_html=True)
+
         translated_text.text(translate_text(text_input, target_language))
     # Call the main function
 if __name__ == '__main__':
