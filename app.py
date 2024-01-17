@@ -13,7 +13,8 @@ openai.api_key=os.getenv("OPENAI_API_KEY")
 # Define a function to handle the translation process
 def translate_text(text, target_language):
     # Define the prompt for the ChatGPT model
-    prompt = f"Translate the following text : '{text}' to {target_language}"
+    prompt = f"Translate the text : '{text}' to {target_language} only. The result should be a straigth translation and please DO NOT USE 'Comment vous appelez-vous' translates to 'What is your name?' in English your response should be like this instead   'What is your name?'  "
+
     
     # Generate the translated text using ChatGPT
     response = openai.chat.completions.create(
