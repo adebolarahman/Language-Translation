@@ -36,7 +36,7 @@ def translate_text(text, target_language):
 # Define the main function that sets up the Streamlit UI and handles the translation process
 def main():
     # Set up the Streamlit UI
-    st.sidebar.header('MyAI ACTL')
+    st.sidebar.header('MyAI ACLT')
     st.sidebar.write('Please enter text to translate and select the target language:')
     
     # Create a text input for the user to enter the text to be translated
