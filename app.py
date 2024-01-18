@@ -18,7 +18,7 @@ def translate_text(text, target_language):
     
     # Generate the translated text using ChatGPT
     response = openai.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-3.5-turbo-instruct",
         messages=[
             {"role": "system", "content": "You are a helpful assistant that translates text."},
             {"role": "user", "content": prompt}
