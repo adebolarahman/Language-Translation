@@ -13,7 +13,7 @@ openai.api_key=os.getenv("OPENAI_API_KEY")
 # Define a function to handle the translation process
 def translate_text(text, target_language):
     # Define the prompt for the ChatGPT model
-    prompt = f"Translate the text : '{text}' to {target_language} only without quoting: {text}. The result should be a straight translation with no explanation, and precise for example always use this format  'Comment vous appelez-vous' your response 'What is your name?'. Another example  'Comment ça va'  your response: 'How are you?',  another example 'كيف حالك؟' should be 'How are you?, etc' "
+    prompt = f"Translate the text : '{text}' to {target_language} only without quotes: {text}. The result should be a straight translation with no explanation, and precise for example always use this format  'Comment vous appelez-vous' your response 'What is your name?'. Another example  'Comment ça va'  your response: 'How are you?',  another example 'كيف حالك؟' should be 'How are you?, etc' "
 
     
     # Generate the translated text using ChatGPT
