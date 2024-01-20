@@ -13,7 +13,7 @@ openai.api_key=os.getenv("OPENAI_API_KEY")
 # Define a function to handle the translation process
 def translate_text(text, target_language):
     # Define the prompt for the ChatGPT model
-    prompt = f"Translate '{text}' to {target_language} without quotes: '{text}'."
+    prompt = f"Translate '{text}' to {target_language} without quotes: '{text}' with no explanation eg user: ¡Vale! your response: okay!"
 
     
     # Generate the translated text using ChatGPT
