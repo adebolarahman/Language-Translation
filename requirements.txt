@@ -2,4 +2,7 @@ streamlit
 python-dotenv  
 python-decouple  
 openai
+googletrans==3.1.0a0
+streamlit==1.26.0
+google-translate
 
